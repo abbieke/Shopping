@@ -1,0 +1,98 @@
+@import "normalize";
+
+$main-color: #000000;
+
+%nostyle-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.4;
+    color: #555;
+}
+
+a {
+    color: #009ced;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0081c3;
+    text-decoration: underline;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.new-year {
+    margin: 0;
+    h3 {
+        margin: 0;
+        padding: 10px;
+        color: #ffffff;
+        background: $main-color;
+        text-align: center;
+    }    
+}
+
+.menu-top {
+    height: 42px; 
+    background: lighten($main-color,80);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            flex: 0 0 340px;
+        }
+    }
+    h1 {
+        margin: 0;
+    }
+    .menu-top-first ul {
+        @extend %nostyle-list;
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+        li {
+            flex: 0 0 100px;      
+        }
+        a {
+            display: block;
+            width: 100px;
+            height: 42px;
+            line-height: 42px;
+            color: $main-color;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background: lighten($main-color,40);
+            color: #ffffff;
+        }
+    }
+
+    .menu-top-sec {
+        ul {
+            @extend %nostyle-list;
+            display: flex;
+            justify-content: flex-end;
+            text-align: center;
+        }
+        li {
+            padding: 10px 0;
+            flex: 0 0 30px;      
+        }
+        .shop-car {
+            flex: 0 0 80px;
+        }
+    }        
+}
