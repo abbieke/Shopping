@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.menu-top .menu-top-first ul, .menu-top .menu-top-sec ul {
+.menu-top .menu-top-first ul, .menu-top .menu-top-sec ul, .hot-sale ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -355,12 +355,12 @@ html {
 }
 
 a {
-  color: #009ced;
+  color: #000000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0081c3;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -457,5 +457,51 @@ a:hover {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 80px;
           flex: 0 0 80px;
+}
+
+.big-img {
+  height: 400px;
+  background: url(../images/freestocks-org.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.big-img h2 {
+  font-size: 50px;
+  color: #ffffff;
+  position: absolute;
+  margin: 0 0 0 150px;
+  left: 10%;
+  top: 80px;
+  text-shadow: #000000 0 0 0.2em;
+}
+
+.hot-sale h1 {
+  text-align: center;
+}
+
+.hot-sale ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hot-sale li {
+  margin-bottom: 10px;
+}
+
+.hot-sale li h2 {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.hot-sale li p {
+  margin: 10px 0;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
