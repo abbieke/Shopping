@@ -44,7 +44,7 @@ a:hover {
 
 .menu-top {
     height: 42px; 
-    background: lighten($main-color,80);
+    background: $sec-color;
 
     .container {
         display: flex;
@@ -95,6 +95,9 @@ a:hover {
         .shop-car {
             flex: 0 0 80px;
         }
+        a:hover {
+            color: rgb(58, 116, 202);
+        }
     }        
 }
 
@@ -135,5 +138,112 @@ a:hover {
             margin: 10px 0;
             text-align: center;
         }
+    }
+}
+
+.just-you {
+    background: lighten($main-color, 40);
+    height: 300px;
+    text-align: center;
+    h1 {
+        margin: 0;
+        padding: 40px 0 30px 0;
+        color: $sec-color;
+        //text-align: center;
+    }
+    p {
+        margin: 0;
+        color: $sec-color;
+        //text-align: center;
+    }
+}
+
+.e-paper {
+    height: 300px;
+    text-align: center;
+    h2 {
+        margin: 0;
+        padding: 40px 0 30px 0;
+        color: $main-color;
+        //text-align: center;
+        span {
+            display: block;
+            position: relative;
+        }
+    }
+    .search input {
+        width: 500px;
+        height: 28px;
+        border: 2px solid #ddd;
+        padding-left: 35px;        
+    }
+
+    .search i {
+        position: relative;
+        left: 35px;
+    }
+    
+    .search input:focus {
+        outline: none;
+        border-color: $main-color;
+        box-shadow: $main-color 0 0 2px;
+    }
+    a {
+        margin: 20px;
+        display: inline-block;
+        width: 540px;
+        height: 28px;
+        line-height: 28px;
+        color: $sec-color;
+        background: $main-color;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+        left: 10px;
+    }
+
+    a:hover {
+        background: lighten($main-color,40);
+        color: $sec-color;
+    }
+}
+
+.menu-bottom {
+    text-align: center;
+    height: 60px;
+    background: $main-color;
+    .container {
+        width: 500px;
+    }
+    ul {
+        @extend %nostyle-list;
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        display: inline-block;
+        width: 100px;
+        height: 60px;
+        color: $sec-color;
+        line-height: 60px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    a:hover{
+        color: $main-color;
+        background: lighten($main-color, 40);
+        transition-duration: 1s;
+    }
+}
+
+.foot {
+    height: 60px;
+    color: $main-color;
+    background: lighten($main-color, 40);
+    text-align: center;
+    p {
+        margin: 0;
+        line-height: 60px;
     }
 }

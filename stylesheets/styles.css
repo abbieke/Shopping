@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.menu-top .menu-top-first ul, .menu-top .menu-top-sec ul, .hot-sale ul {
+.menu-top .menu-top-first ul, .menu-top .menu-top-sec ul, .hot-sale ul, .menu-bottom ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -383,7 +383,7 @@ a:hover {
 
 .menu-top {
   height: 42px;
-  background: #cccccc;
+  background: #ffffff;
 }
 
 .menu-top .container {
@@ -459,6 +459,10 @@ a:hover {
           flex: 0 0 80px;
 }
 
+.menu-top .menu-top-sec a:hover {
+  color: #3a74ca;
+}
+
 .big-img {
   height: 400px;
   background: url(../images/freestocks-org.jpg) center center no-repeat;
@@ -503,5 +507,124 @@ a:hover {
 .hot-sale li p {
   margin: 10px 0;
   text-align: center;
+}
+
+.just-you {
+  background: #666666;
+  height: 300px;
+  text-align: center;
+}
+
+.just-you h1 {
+  margin: 0;
+  padding: 40px 0 30px 0;
+  color: #ffffff;
+}
+
+.just-you p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.e-paper {
+  height: 300px;
+  text-align: center;
+}
+
+.e-paper h2 {
+  margin: 0;
+  padding: 40px 0 30px 0;
+  color: #000000;
+}
+
+.e-paper h2 span {
+  display: block;
+  position: relative;
+}
+
+.e-paper .search input {
+  width: 500px;
+  height: 28px;
+  border: 2px solid #ddd;
+  padding-left: 35px;
+}
+
+.e-paper .search i {
+  position: relative;
+  left: 35px;
+}
+
+.e-paper .search input:focus {
+  outline: none;
+  border-color: #000000;
+  -webkit-box-shadow: #000000 0 0 2px;
+          box-shadow: #000000 0 0 2px;
+}
+
+.e-paper a {
+  margin: 20px;
+  display: inline-block;
+  width: 540px;
+  height: 28px;
+  line-height: 28px;
+  color: #ffffff;
+  background: #000000;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  left: 10px;
+}
+
+.e-paper a:hover {
+  background: #666666;
+  color: #ffffff;
+}
+
+.menu-bottom {
+  text-align: center;
+  height: 60px;
+  background: #000000;
+}
+
+.menu-bottom .container {
+  width: 500px;
+}
+
+.menu-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-bottom a {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  color: #ffffff;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-bottom a:hover {
+  color: #000000;
+  background: #666666;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.foot {
+  height: 60px;
+  color: #000000;
+  background: #666666;
+  text-align: center;
+}
+
+.foot p {
+  margin: 0;
+  line-height: 60px;
 }
 /*# sourceMappingURL=styles.css.map */
