@@ -341,7 +341,7 @@ template {
   display: none;
 }
 
-.menu-top .menu-top-first ul, .menu-top .menu-top-sec ul, .hot-sale ul, .menu-bottom ul {
+.menu-top .menu-top-first ul, .menu-top .menu-top-sec ul, .hot-sale ul, .menu-bottom ul, .item .item-top ul, .item .item-mid ul, .item .item-buttom ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -542,6 +542,10 @@ a:hover {
   position: relative;
 }
 
+.e-paper .search {
+  position: relative;
+}
+
 .e-paper .search input {
   width: 500px;
   height: 28px;
@@ -550,8 +554,9 @@ a:hover {
 }
 
 .e-paper .search i {
-  position: relative;
-  left: 35px;
+  position: absolute;
+  top: 9px;
+  left: 280px;
 }
 
 .e-paper .search input:focus {
@@ -571,8 +576,6 @@ a:hover {
   background: #000000;
   text-align: center;
   text-decoration: none;
-  position: relative;
-  left: 10px;
 }
 
 .e-paper a:hover {
@@ -626,5 +629,165 @@ a:hover {
 .foot p {
   margin: 0;
   line-height: 60px;
+}
+
+/* item.html */
+.item .container {
+  width: 840px;
+}
+
+.item .item-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+}
+
+.item .item-top li {
+  padding: 40px 0;
+  padding-right: 10px;
+}
+
+.item .item-top a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.item .item-top a:hover {
+  color: #999999;
+  text-decoration: underline;
+}
+
+.item .item-mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item .item-mid .item-mid-left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 500px;
+          flex: 0 0 500px;
+  margin-right: 40px;
+}
+
+.item .item-mid .item-mid-left .image {
+  width: 500px;
+  height: 500px;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.item .item-mid .item-mid-right h2:first-of-type {
+  margin: 0;
+}
+
+.item .item-mid .item-mid-right p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.item .item-mid .item-mid-right p1 {
+  margin: 0;
+  padding: 0;
+}
+
+.item .item-mid .item-mid-right > a {
+  display: block;
+  margin: 20px 0;
+  width: 90%;
+  height: 40px;
+  background: #000000;
+  color: #ffffff;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.item .item-mid .item-mid-right > a:hover {
+  color: #000000;
+  background: #666666;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.item .item-mid .select {
+  position: relative;
+}
+
+.item .item-mid .select input {
+  width: 90%;
+}
+
+.item .item-mid .select i {
+  position: absolute;
+  top: 5px;
+  right: 29px;
+}
+
+.item .item-mid .count input {
+  width: 50px;
+}
+
+.item .item-mid li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  margin-bottom: 20px;
+}
+
+.item .item-mid li a:hover {
+  color: #999999;
+  text-decoration: underline;
+}
+
+.item .item-mid li:last-child {
+  margin-bottom: 0;
+}
+
+.item .item-mid li > a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80px;
+          flex: 0 0 80px;
+  margin-right: 20px;
+}
+
+.item .item-mid li > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.item .item-mid h3 {
+  margin: 5px 0;
+}
+
+.item .item-mid h2:last-of-type {
+  border-top: #555 2px solid;
+  padding-top: 20px;
+}
+
+.item .item-buttom {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item .item-buttom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.item .item-buttom a:hover {
+  color: #999999;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -161,6 +161,7 @@ a:hover {
 .e-paper {
     height: 300px;
     text-align: center;
+    //align-items: center;
     h2 {
         margin: 0;
         padding: 40px 0 30px 0;
@@ -171,6 +172,9 @@ a:hover {
             position: relative;
         }
     }
+    .search {
+        position: relative;
+    }
     .search input {
         width: 500px;
         height: 28px;
@@ -179,8 +183,9 @@ a:hover {
     }
 
     .search i {
-        position: relative;
-        left: 35px;
+        position: absolute;
+        top: 9px;
+        left: 280px;
     }
     
     .search input:focus {
@@ -198,8 +203,6 @@ a:hover {
         background: $main-color;
         text-align: center;
         text-decoration: none;
-        position: relative;
-        left: 10px;
     }
 
     a:hover {
@@ -245,5 +248,141 @@ a:hover {
     p {
         margin: 0;
         line-height: 60px;
+    }
+}
+
+/* item.html */
+
+.item {
+    .container {
+        width: 840px;
+    }
+    .item-top {
+        ul {
+            @extend %nostyle-list;
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+        }
+        li {
+            padding: 40px 0;
+            padding-right: 10px;
+        }
+
+        a {
+            color: $main-color;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: lighten($main-color, $amount: 60);
+            text-decoration: underline;
+        }
+    }
+
+    .item-mid {
+        display: flex;
+        .item-mid-left {
+            flex: 0 0 500px;
+            margin-right: 40px;
+            .image {                
+                width: 500px;
+                height: 500px;
+                flex-basis: auto;
+            }
+        }
+        .item-mid-right {
+            h2:first-of-type {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+                padding: 10px 0;
+            }
+            p1 {
+                margin: 0;
+                padding: 0;
+            }
+            >a {
+                display: block;
+                margin: 20px 0;;
+                width: 90%;
+                height: 40px;
+                background: $main-color;
+                color: $sec-color;
+                line-height: 40px;
+                text-align: center;
+                text-decoration: none;
+            }
+            >a:hover {
+                color: $main-color;
+                background: lighten($main-color, 40);
+                transition-duration: 1s;
+            }
+        }
+        .select {
+            position: relative;
+            input {
+                width: 90%;
+            }
+            i{
+                position: absolute;
+                top: 5px;
+                right: 29px;
+            }
+        }
+        .count {
+            input {
+                width: 50px;
+            }
+        }
+        ul {
+            @extend %nostyle-list;
+        }
+
+        li {
+            display: flex;
+            flex-basis: auto;
+            margin-bottom: 20px;
+
+            a:hover {
+                color: lighten($main-color, $amount: 60);
+            text-decoration: underline;
+            }
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        li > a {
+            flex: 0 0 80px;
+            margin-right: 20px
+        }
+
+        li > div {
+            flex: 1;
+        }
+
+        h3 {
+            margin: 5px 0;
+        }
+
+        h2:last-of-type {
+            border-top: #555 2px solid;
+            padding-top: 20px;
+        }
+    }
+    .item-buttom {
+        align-items: center;
+        ul {
+            @extend %nostyle-list;
+            display: flex;
+            justify-content: space-around;
+        }
+        a:hover {
+            color: lighten($main-color, $amount: 60);
+            text-decoration: underline;
+        }
     }
 }
